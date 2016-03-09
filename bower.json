@@ -1,0 +1,22 @@
+{
+  "name": "tornado_template",
+  "homepage": "https://github.com/kocsob/python27-tricks-examples",
+  "authors": [
+    "Balazs Kocso"
+  ],
+  "description": "Tornado template",
+  "main": "__main__.py",
+  "moduleType": [],
+  "license": "Apache-2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

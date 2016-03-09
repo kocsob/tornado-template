@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="public/components/bootstrap/dist/css/bootstrap.css">
+    <title>Tornado template</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Tornado template</a>
+            </div> <!-- .navbar-header -->
+        </div> <!-- .container -->
+    </nav>
+    <div class="container">
+        <div class="jumbotron">
+            <h4>
+                <form class="form-horizontal" method="post">
+                    <label for="username-web" class="control-label col-sm-2">Username</label>
+                    <div class="input-group col-sm-10">
+                        <input id="username-web" class="form-control" name="username" type="text" placeholder="Username">
+                        <div class="input-group-btn">
+                            <input id="submit-web" class="btn btn-primary" type="submit" value="Submit WEB">
+                        </div> <!-- .input-group-btn -->
+                    </div> <!-- .input-group .col-sm-10 -->
+                    {% module xsrf_form_html() %}
+                </form>
+            </h4>
+            <h4>
+                <form id="api-key" class="form-horizontal" action="/api" method="post">
+                    <label for="username-api" class="control-label col-sm-2">Username</label>
+                    <div class="input-group col-sm-10">
+                        <input id="username-api" class="form-control"  name="username" type="text" placeholder="Username">
+                        <div class="input-group-btn">
+                            <input id="submit-api" class="btn btn-primary" type="submit" value="Submit API">
+                        </div> <!-- .input-group-btn -->
+                    </div> <!-- .input-group .col-sm-10 -->
+                </form>
+            </h4>
+        </div> <!-- .jumbotron -->
+    </div> <!-- .container -->
+</body>
